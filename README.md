@@ -4,7 +4,7 @@ The repository contains all works of project 0 of CSCI 8360 Data Science Practic
 
 ## Introduction
 
-This project is to implement a basic word counter in Apache Spark and result in a customized word-count dictionary. According to the books inputted, the word counter will detect the words, record the corresponding counts, elminate the stopwords, filter out the punctuations, and provide the top `N` most frequent words in a dictionary. Otherwise, depends on the TF-IDF of each specific word, the counter will also produce the top `n` words with highest TF-IDF scores. 
+This project is to implement a basic word counter in Apache Spark and result in a customized word-count dictionary. According to the books inputted, the word counter will detect the words, record the corresponding counts, elminate the stopwords, filter out the punctuations, and provide the top `n` most frequent words in a dictionary. Otherwise, depends on the TF-IDF of each specific word, the counter will also produce the top `t` words with highest TF-IDF scores. 
 
 ## Datasets
 
@@ -63,10 +63,10 @@ Run the code in terminal by following command-line:
  
 #### Arguments
 
- **Required Arguments**
+ Required Arguments
    - `-p`: Path to all input text files
-
- **Optional Arguments**
+ 
+ Optional Arguments
    - `-n`: Number of the top frequent (Default: 40)
    - `-t`: Number of the top words with largest TF-IDF values (Default: 5)
    - `-a`: Option of processing subproject a. (Default: True)
@@ -80,10 +80,24 @@ See following description of each subproject. You can specify the results with o
  
  1. **Subproject a**
     
+    Generate a dictionary of the top `n` words across all documents with the largest counts. 
     
+    In this case, we are dropping the words with a total count less than 2. The result file will be saved as a `.json` file and saved in the directory `yourpath/output`.
     
  2. **Subproject b**
  
+    Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. 
+    
+    In this case, we are still dropping the words with a total count less than 2. The result file will be saved as a `.json` file and saved in the directory `yourpath/output`.
+ 
  3. **Subproject c**
+ 
+    Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. Moreover, for those words started with and ended with punctuations, we are stripping those punctuation before counting them. The punctuations we considered in this case are: `.` (periods), `,` (commas), `:` (colons), `;` (semicolons), `’` (single quotes), `!` (exclamation points), and `?` (question marks).
+    
+    In this case, we are still dropping the words with a total count less than 2, and dropping those words length not larger than 1. The result file
+    
+    
+    periods (.), commas (,), colons (:), semicolons
+(;), single quotes (’), exclamation points (!), or questions marks (?)
  
  4. **Subproject d**
