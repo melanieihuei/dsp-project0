@@ -108,7 +108,5 @@ See following description of each subproject. You can specify the results with o
       
     - IDF (Inverse Document Frequency) term
     
-      ```math
-      log(frac{N}{n_t}) 
-      ```
+      $$log(frac{N}{n_t})$$
     
