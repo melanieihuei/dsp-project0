@@ -11,14 +11,14 @@ This project is to implement a basic word counter in Apache Spark and result in 
 For the example datasets used in this case, the producer is using freely available data from [Project Guenberg](https://
 www.gutenberg.org/). The list of specific 8 books showed as follows:
 
-⋅⋅⋅1. *Pride and Prejudice*, by Jane Austen
-⋅⋅⋅2. *Alice's Adventures in Wonderland*, by Lewis Carroll
-⋅⋅⋅3. *Ulysses*, by James Joyce
-⋅⋅⋅4. *Leviathan*, by Thomas Hobbes
-⋅⋅⋅5. *The Iliad*, by Homer
-⋅⋅⋅6. *The War of the Worlds*, by H.G. Wells
-⋅⋅⋅7. *The Republic*, by Plato
-⋅⋅⋅8. *Little Women*, by Louisa May Alcott
+⋅⋅1. *Pride and Prejudice*, by Jane Austen
+⋅⋅2. *Alice's Adventures in Wonderland*, by Lewis Carroll
+⋅⋅3. *Ulysses*, by James Joyce
+⋅⋅4. *Leviathan*, by Thomas Hobbes
+⋅⋅5. *The Iliad*, by Homer
+⋅⋅6. *The War of the Worlds*, by H.G. Wells
+⋅⋅7. *The Republic*, by Plato
+⋅⋅8. *Little Women*, by Louisa May Alcott
 
 You can download them via the website, or the files are already uploaded in this Github.
 
