@@ -30,7 +30,39 @@ You can download them via the website, or the files are already uploaded in this
 
 ## Word Counter
 
-### Subprojects Selection
+### 1. Arguments for Command-Lines
+
+Run the code `p0.py` in your terminal. There are few notes before running it:
+
+#### For Mac (OS X System) Users:
+
+Go into the directory where you put your datasets (files) in (which will be the path that you call later). 
+
+`.DS_Store` files are automatically created by Mac OS X Finder in browsed directories, which is not visible when you are using GUI. Check the article [here](https://helpx.adobe.com/dreamweaver/kb/remove-ds-store-files-mac.html) for further information. You'll have to delete it before running the code since it confilcts with the python package `os` we used. 
+
+Run the code in terminal under the target directory:
+
+```
+sudo find / -name ".DS_Store" -depth -exec rm {} \;
+```
+
+You'll have to type in your machine's password to process `sudo` command.
+
+#### Run the word counter in Terminal:
+
+You are able to start [Pyspark](https://pypi.python.org/pypi/pyspark/2.2.1) by type in the path where you put your `pyspark`, however, running `.py` script in [Pyspark](https://pypi.python.org/pypi/pyspark/2.2.1), you'll need `spark-submit`.
+
+Run the code in terminal by following command-line:
+
+```
+/bin/spark-submit csci8360/p0.py -p ~/csci8360/p0/
+```
+where
+
+
+
+
+### 2. Subprojects Selection
  
  1. Subproject a
     
