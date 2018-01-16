@@ -84,19 +84,19 @@ See following description of each subproject. You can specify the results with o
     
     Generate a dictionary of the top `n` words across all documents with the largest counts. 
     
-    In this case, we are dropping the words with a total count less than 2. The result file will be saved as a `.json` file and saved in the directory `yourpath/output`.
+    In this case, we are dropping the words with a total count less than 2. The result file will be saved as a `.json` file in the directory `yourpath/output`.
     
  2. **Subproject b**
  
     Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. 
     
-    In this case, we are still dropping the words with a total count less than 2. The result file will be saved as a `.json` file and saved in the directory `yourpath/output`.
+    In this case, we are still dropping the words with a total count less than 2. The result file will be saved as a `.json` file in the directory `yourpath/output`.
  
  3. **Subproject c**
  
     Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. Moreover, for those words started with and ended with punctuations, we are stripping those punctuation before counting them. The punctuations we considered in this case are: `.` (periods), `,` (commas), `:` (colons), `;` (semicolons), `’` (single quotes), `!` (exclamation points), and `?` (question marks).
     
-    In this case, we are still dropping the words with a total count less than 2, and dropping those words length not larger than 1. The result file will be saved as a `.json` file and saved in the directory `yourpath/output`.
+    In this case, we are still dropping the words with a total count less than 2, and dropping those words length not larger than 1. The result file will be saved as a `.json` file in the directory `yourpath/output`.
     
  4. **Subproject d**
  
@@ -104,10 +104,30 @@ See following description of each subproject. You can specify the results with o
     
     Since word counts are an imperfect measure of importance of frequency of the words (terms), the calculating TF-IDF (Term Frequency Inverse Document Frequency) values are more reliable to determine the counts.
     
-    - TF (Term Frequency) term
+    - **TF (Term Frequency) term**
       
-    - IDF (Inverse Document Frequency) term 
+      TF term for each word is an array of $N$ elements. Each element is the frequency of the specific word appears in that book. The result is as following vector:
+      
+      $$
+      (n_{t_1}, n_{t_2}, ... , n_{t_k})
+      $$
+      
+       * $N$: number of documents (in this example case, 8 books)
+       * $n_{t_i}$: frequency of the specific word $t$ appears in book $i$
+      
+    - **IDF (Inverse Document Frequency) term**
+      
+      Calculate the IDF term for each word by following equation:
+      
       $$
       log(\frac{N}{n_t})
       $$
     
+       * $N$: number of documents
+       * $n_t$: number of documents the specific word $t$ appears in 
+    
+    - **TF-IDF term**
+    
+      Multiply the IDF term by each document-specific TF term. Then the results are the TF-IDF score for each document.
+      
+    Rank the TF-IDF values by each documents. Contain the top 5 words and their TF-IDF values in the dictionary and save as a `.json` file in the directory `yourpath/output`.
