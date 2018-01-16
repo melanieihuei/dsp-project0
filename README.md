@@ -43,7 +43,7 @@ Go into the directory where you put your datasets (files) in (which will be the 
 Run the code in terminal under the target directory:
 
 ```
-sudo find / -name ".DS_Store" -depth -exec rm {} \;
+$ sudo find / -name ".DS_Store" -depth -exec rm {} \;
 ```
 
 You'll have to type in your machine's password to process `sudo` command.
@@ -55,7 +55,7 @@ You are able to start [Pyspark](https://pypi.python.org/pypi/pyspark/2.2.1) by t
 Run the code in terminal by following command-line:
 
 ```
-/bin/spark-submit csci8360/p0.py -p ~/csci8360/p0/
+$ /bin/spark-submit csci8360/p0.py -p ~/csci8360/p0/
 ```
  - `/bin/spark-submit`: the path to your `spark-submit`
  - `csci8360/p0.py`: the path to your python script
@@ -94,10 +94,10 @@ See following description of each subproject. You can specify the results with o
  
     Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. Moreover, for those words started with and ended with punctuations, we are stripping those punctuation before counting them. The punctuations we considered in this case are: `.` (periods), `,` (commas), `:` (colons), `;` (semicolons), `’` (single quotes), `!` (exclamation points), and `?` (question marks).
     
-    In this case, we are still dropping the words with a total count less than 2, and dropping those words length not larger than 1. The result file
+    In this case, we are still dropping the words with a total count less than 2, and dropping those words length not larger than 1. The result file will be saved as a `.json` file and saved in the directory `yourpath/output`.
     
-    
-    periods (.), commas (,), colons (:), semicolons
-(;), single quotes (’), exclamation points (!), or questions marks (?)
- 
  4. **Subproject d**
+ 
+    Generate a dictionary of the top `t` words for each book (each document) with the largest TF-IDF values. 
+    
+    
