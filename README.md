@@ -69,14 +69,18 @@ Run the code in terminal by following command-line:
 **Optional Arguments**
  - `-n`: Number of the top frequent (Default: 40)
  - `-t`: Number of the top words with largest TF-IDF values (Default: 5)
- - `-a`: Option of processing subproject a.
- - `-b`: Option of processing subproject b.
- - `-c`: Option of processing subproject c.
- - `-d`: Option of processing subproject d.
+ - `-a`: Option of processing subproject a. (Default: True)
+ - `-b`: Option of processing subproject b. (Default: True)
+ - `-c`: Option of processing subproject c. (Default: True)
+ - `-d`: Option of processing subproject d. (Default: True)
+
+See following description of each subproject. You can specify the results with or without including stopwords, with or without including punctuations, and with or without TF-IDF values by changing the Options of `-a`, `-b`, `-c`, `-d` to `False`
 
 ### 2. Subprojects Selection
  
  1. Subproject a
+    
+    
     
  2. Subproject b
  
