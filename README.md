@@ -76,7 +76,9 @@ $ /bin/spark-submit csci8360/p0.py -p ~/csci8360/p0/
     - `-c`: Option of processing subproject c. (Default: True)
     - `-d`: Option of processing subproject d. (Default: True)
 
-See following description of each subproject. You can specify the results with or without including stopwords, with or without including punctuations, and with or without TF-IDF values by changing the Options of `-a`, `-b`, `-c`, `-d` to `False`
+See following description of each subproject. 
+
+You can specify the results with or without including stopwords, with or without including punctuations, and with or without TF-IDF values by changing the Options of `-a`, `-b`, `-c`, `-d` to `False`
 
 ### 2. Subprojects 
  
