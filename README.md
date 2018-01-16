@@ -94,7 +94,9 @@ See following description of each subproject. You can specify the results with o
  
  3. **Subproject c**
  
-    Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. Moreover, for those words started with and ended with punctuations, we are stripping those punctuation before counting them. The punctuations we considered in this case are: `.` (periods), `,` (commas), `:` (colons), `;` (semicolons), `’` (single quotes), `!` (exclamation points), and `?` (question marks).
+    Generate a dictionary of the top `n` words across all documents with the largest counts, without taking those stopwords in `stopwords.txt`. Moreover, for those words started with and ended with punctuations, we are stripping those punctuation before counting them. 
+    
+    The punctuations we considered in this case are: `.` (periods), `,` (commas), `:` (colons), `;` (semicolons), `’` (single quotes), `!` (exclamation points), and `?` (question marks).
     
     In this case, we are still dropping the words with a total count less than 2, and dropping those words length not larger than 1. The result file will be saved as a `.json` file in the directory `yourpath/output`.
     
