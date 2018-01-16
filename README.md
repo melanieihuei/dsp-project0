@@ -107,6 +107,7 @@ See following description of each subproject. You can specify the results with o
     - TF (Term Frequency) term
       
     - IDF (Inverse Document Frequency) term
+    
       $log(frac{N}{n_t})$ 
     
     
