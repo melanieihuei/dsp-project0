@@ -131,3 +131,7 @@ See following description of each subproject. You can specify the results with o
       Multiply the IDF term by each document-specific TF term. Then the results are the TF-IDF score for each document.
       
     Rank the TF-IDF values by each documents. Contain the top 5 words and their TF-IDF values in the dictionary and save as a `.json` file in the directory `yourpath/output`.
+
+## License
+
+  [MIT](https://github.com/dsp-uga/melanieihuei-p0/blob/master/LICENSE)
