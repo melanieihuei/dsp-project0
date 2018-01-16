@@ -28,6 +28,16 @@ You can download them via the website, or the files are already uploaded in this
 - [Apache Spark 2.2.1](http://spark.apache.org/)
 - [Pyspark 2.2.1](https://pypi.python.org/pypi/pyspark/2.2.1)
 
-## Create Counter
+## Word Counter
 
-
+### Subprojects Selection
+ 
+ 1. Subproject a
+    This is just testing
+    if it doesn't work?
+    
+ 2. Subproject b
+ 
+ 3. Subproject c
+ 
+ 4. Subproject d
