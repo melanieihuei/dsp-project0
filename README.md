@@ -4,7 +4,9 @@ The repository contains all works of project 0 of CSCI 8360 Data Science Practic
 
 ## Introduction
 
-This project is to implement a basic word counter in Apache Spark and result in a customized word-count dictionary. According to the books inputted, the word counter will detect the words, record the corresponding counts, elminate the stopwords, filter out the punctuations, and provide the top `n` most frequent words in a dictionary. Otherwise, depends on the TF-IDF of each specific word, the counter will also produce the top `t` words with highest TF-IDF scores. 
+This project is to implement a basic word counter in Apache Spark and result in a customized word-count dictionary. 
+
+According to the books inputted, the word counter will detect the words, record the corresponding counts, elminate the stopwords, filter out the punctuations, and provide the top `n` most frequent words in a dictionary. Otherwise, depends on the TF-IDF of each specific word, the counter will also produce the top `t` words with highest TF-IDF scores. 
 
 ## Datasets
 
@@ -99,5 +101,12 @@ See following description of each subproject. You can specify the results with o
  4. **Subproject d**
  
     Generate a dictionary of the top `t` words for each book (each document) with the largest TF-IDF values. 
+    
+    Since word counts are an imperfect measure of importance of frequency of the words (terms), the calculating TF-IDF (Term Frequency Inverse Document Frequency) values are more reliable to determine the counts.
+    
+    - TF (Term Frequency) term
+      
+    - IDF (Inverse Document Frequency) term
+      $log(frac{N}{n_t})$ 
     
     
