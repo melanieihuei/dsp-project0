@@ -57,17 +57,26 @@ Run the code in terminal by following command-line:
 ```
 /bin/spark-submit csci8360/p0.py -p ~/csci8360/p0/
 ```
-where
+ - `/bin/spark-submit`: the path to your `spark-submit`
+ - `csci8360/p0.py`: the path to your python script
+ - `-p ~/csci8360/p0`: specify the path (`-p`) to the directory `~/csci8360/p0` you put your dataset
+ 
+#### Arguments
 
+**Required Arguments**
+ - `-p`: Path to all input text files
 
-
+**Optional Arguments**
+ - `-n`: Number of the top frequent (Default: 40)
+ - `-t`: Number of the top words with largest TF-IDF values (Default: 5)
+ - `-a`: Option of processing subproject a.
+ - `-b`: Option of processing subproject b.
+ - `-c`: Option of processing subproject c.
+ - `-d`: Option of processing subproject d.
 
 ### 2. Subprojects Selection
  
  1. Subproject a
-    
-    This is just testing
-    if it doesn't work?
     
  2. Subproject b
  
