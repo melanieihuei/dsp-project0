@@ -110,7 +110,7 @@ You can specify the results with or without including stopwords, with or without
     
     - **TF (Term Frequency) term**
       
-      TF term for each word is an array of $N$ elements. Each element is the frequency of the specific word appears in that book. The result is as following vector:
+      TF term for each word is an array of <img src="https://latex.codecogs.com/gif.latex?N" title="N" /> elements. Each element is the frequency of the specific word appears in that book. The result is as following vector:
       
         <img src="https://latex.codecogs.com/gif.latex?(n_{t_1},&space;n_{t_2},&space;...&space;,&space;n_{t_k})" title="(n_{t_1}, n_{t_2}, ... , n_{t_k})" />
       
