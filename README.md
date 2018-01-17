@@ -115,7 +115,7 @@ You can specify the results with or without including stopwords, with or without
       $$
       (n_{t_1}, n_{t_2}, ... , n_{t_k})
       $$
-      ![img]http://www.sciweavers.org/tex2img.php?eq=%28n_%7Bt_1%7D%2C%20n_%7Bt_2%7D%2C%20...%20%2C%20n_%7Bt_k%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
+      <img src="https://www.codecogs.com/eqnedit.php?latex=(n_{t_1},&space;n_{t_2},&space;...&space;,&space;n_{t_k})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(n_{t_1},&space;n_{t_2},&space;...&space;,&space;n_{t_k})" title="(n_{t_1}, n_{t_2}, ... , n_{t_k})" />
       
        * $N$: number of documents (in this example case, 8 books)
        * $n_{t_i}$: frequency of the specific word $t$ appears in book $i$
