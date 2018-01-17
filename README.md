@@ -112,24 +112,19 @@ You can specify the results with or without including stopwords, with or without
       
       TF term for each word is an array of $N$ elements. Each element is the frequency of the specific word appears in that book. The result is as following vector:
       
-      $$
-      (n_{t_1}, n_{t_2}, ... , n_{t_k})
-      $$
-      <img src="https://www.codecogs.com/eqnedit.php?latex=(n_{t_1},&space;n_{t_2},&space;...&space;,&space;n_{t_k})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(n_{t_1},&space;n_{t_2},&space;...&space;,&space;n_{t_k})" title="(n_{t_1}, n_{t_2}, ... , n_{t_k})" />
+      <img src="https://latex.codecogs.com/gif.latex?(n_{t_1},&space;n_{t_2},&space;...&space;,&space;n_{t_k})" title="(n_{t_1}, n_{t_2}, ... , n_{t_k})" />
       
-       * $N$: number of documents (in this example case, 8 books)
-       * $n_{t_i}$: frequency of the specific word $t$ appears in book $i$
+       * <img src="https://latex.codecogs.com/gif.latex?N" title="N" />: number of documents (in this example case, 8 books)
+       * <img src="https://latex.codecogs.com/gif.latex?n_{t_i}" title="n_{t_i}" />: frequency of the specific word <img src="https://latex.codecogs.com/gif.latex?t" title="t" /> appears in book <img src="https://latex.codecogs.com/gif.latex?i" title="i" />
       
     - **IDF (Inverse Document Frequency) term**
       
       Calculate the IDF term for each word by following equation:
       
-      $$
-      log(\frac{N}{n_t})
-      $$
-    
-       * $N$: number of documents
-       * $n_t$: number of documents the specific word $t$ appears in 
+      <img src="https://latex.codecogs.com/gif.latex?log(\frac{N}{n_t})" title="log(\frac{N}{n_t})" />
+          
+       * <img src="https://latex.codecogs.com/gif.latex?N" title="N" />: number of documents
+       * <img src="https://latex.codecogs.com/gif.latex?n_t" title="n_t" />: number of documents the specific word <img src="https://latex.codecogs.com/gif.latex?t" title="t" /> appears in 
     
     - **TF-IDF term**
     
