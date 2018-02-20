@@ -1,4 +1,4 @@
-# melanieihuei-p0
+# Word Counter on Apache Spark
 
 The repository contains all works of project 0 of CSCI 8360 Data Science Practicum for Srping 2018.
 
